@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		188AEC061F0D10C0006BB41E /* MeduzaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AEC051F0D10C0006BB41E /* MeduzaData.swift */; };
+		188AEC081F0D2E1D006BB41E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188AEC071F0D2E1D006BB41E /* Alamofire.framework */; };
+		188AEC0A1F0D2E23006BB41E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188AEC091F0D2E23006BB41E /* Realm.framework */; };
+		188AEC0C1F0D2E28006BB41E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188AEC0B1F0D2E28006BB41E /* RealmSwift.framework */; };
+		188AEC0E1F0D2E2D006BB41E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188AEC0D1F0D2E2D006BB41E /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		1899178A1F0CEC540070BB8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189917891F0CEC540070BB8C /* AppDelegate.swift */; };
 		1899178C1F0CEC540070BB8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899178B1F0CEC540070BB8C /* ViewController.swift */; };
 		1899178F1F0CEC540070BB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1899178D1F0CEC540070BB8C /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 /* Begin PBXFileReference section */
 		02C2BFD466D143805781EFBD /* Pods_______1____________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______1____________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188AEC051F0D10C0006BB41E /* MeduzaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeduzaData.swift; sourceTree = "<group>"; };
+		188AEC071F0D2E1D006BB41E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Проект1_ШатроваАнна-guilckmoftvayzgmltloettnvnxr/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		188AEC091F0D2E23006BB41E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		188AEC0B1F0D2E28006BB41E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		188AEC0D1F0D2E2D006BB41E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/Проект1_ШатроваАнна-guilckmoftvayzgmltloettnvnxr/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		189917861F0CEC540070BB8C /* Проект1_ШатроваАнна.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Проект1_ШатроваАнна.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189917891F0CEC540070BB8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1899178B1F0CEC540070BB8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188AEC0E1F0D2E2D006BB41E /* SwiftyJSON.framework in Frameworks */,
+				188AEC0C1F0D2E28006BB41E /* RealmSwift.framework in Frameworks */,
+				188AEC0A1F0D2E23006BB41E /* Realm.framework in Frameworks */,
+				188AEC081F0D2E1D006BB41E /* Alamofire.framework in Frameworks */,
 				65FDCB72325CE873B2768E9A /* Pods_______1____________.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +92,10 @@
 		8955C4DB4E059042040194D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				188AEC0D1F0D2E2D006BB41E /* SwiftyJSON.framework */,
+				188AEC0B1F0D2E28006BB41E /* RealmSwift.framework */,
+				188AEC091F0D2E23006BB41E /* Realm.framework */,
+				188AEC071F0D2E1D006BB41E /* Alamofire.framework */,
 				02C2BFD466D143805781EFBD /* Pods_______1____________.framework */,
 			);
 			name = Frameworks;
@@ -346,6 +362,11 @@
 			baseConfigurationReference = 7D12887F38B08ED4D8067852 /* Pods-Проект1_ШатроваАнна.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = "Проект1_ШатроваАнна/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-78.------1------------";
@@ -359,6 +380,11 @@
 			baseConfigurationReference = A342DBE30BDEFEB9EFDA92D8 /* Pods-Проект1_ШатроваАнна.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = "Проект1_ШатроваАнна/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-78.------1------------";
