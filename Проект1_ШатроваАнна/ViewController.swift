@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 
 // Проект - мобильный клиент для чтения новостей с Медузы. 
 // Используемый API : https://meduza.io/api/v3/search?chrono=news&locale=ru&page=0&per_page=24
+
 /*
      1. Выбрать тему проекта и записаться в таблицу, ссылка в комментариях.
      
